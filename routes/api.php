@@ -44,4 +44,6 @@ Route::get('/users', [UserController::class, 'getUsers']);
 Route::post('/user', [UserController::class, 'getUser']);
 
 Route::post('/message/send', [MessageController::class, 'createMessage']);
+Route::post('/message/sent', [MessageController::class, 'getSentMessage']);
+Route::post('/message/received', [MessageController::class, 'getReceivedMessage']);
 
