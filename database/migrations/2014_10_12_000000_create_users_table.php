@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->tinyText('telephone');
+            $table->tinyText('telephone')->nullable();
             $table->string('image')->nullable();
             $table->boolean('is_volunteer')->default(false);
             $table->enum('support_type',['translate', 'advice', 'other'])->nullable();
